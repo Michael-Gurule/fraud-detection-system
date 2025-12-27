@@ -19,7 +19,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # Page config
 st.set_page_config(
     page_title="Fraud Detection Dashboard",
-    page_icon="🔍",
     layout="wide"
 )
 
@@ -54,7 +53,7 @@ def load_sample_data():
         return None
 
 def main():
-    st.title("🔍 Real-Time Fraud Detection Dashboard")
+    st.title(" Real-Time Fraud Detection Dashboard")
     st.markdown("---")
     
     # Sidebar
@@ -79,7 +78,7 @@ def main():
 
 def show_overview(df):
     """Overview page with key metrics"""
-    st.header("📊 System Overview")
+    st.header(" System Overview")
     
     if df is None:
         st.error("Data not loaded. Please run the data generation script first.")
@@ -165,7 +164,7 @@ def show_overview(df):
 
 def show_prediction_page(model):
     """Interactive prediction page"""
-    st.header("🎯 Make a Prediction")
+    st.header(" Make a Prediction")
     
     if model is None:
         st.error("Model not loaded. Please train the model first.")
@@ -200,7 +199,7 @@ def show_prediction_page(model):
         customer_avg_amount = st.number_input("Customer Avg Amount", 
                                              min_value=0.0, value=75.0, step=5.0)
     
-    if st.button("🔍 Predict Fraud", type="primary"):
+    if st.button(" Predict Fraud", type="primary"):
         # Prepare transaction data
         day_mapping = {"Monday": 0, "Tuesday": 1, "Wednesday": 2, "Thursday": 3,
                       "Friday": 4, "Saturday": 5, "Sunday": 6}
@@ -276,7 +275,7 @@ def show_prediction_page(model):
 
 def show_performance_page(df, model):
     """Model performance metrics"""
-    st.header("📈 Model Performance")
+    st.header(" Model Performance")
     
     if model is None or df is None:
         st.error("Model or data not loaded.")
@@ -335,7 +334,7 @@ def show_performance_page(df, model):
 
 def show_data_explorer(df):
     """Interactive data explorer"""
-    st.header("🔎 Data Explorer")
+    st.header(" Data Explorer")
     
     if df is None:
         st.error("Data not loaded.")
@@ -377,7 +376,7 @@ def show_data_explorer(df):
     # Download button
     csv = filtered_df.to_csv(index=False)
     st.download_button(
-        "📥 Download Filtered Data",
+        " Download Filtered Data",
         csv,
         "filtered_transactions.csv",
         "text/csv"
