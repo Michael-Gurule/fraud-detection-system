@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/41196e9f-8182-4d38-a53c-f7e677c6f70f" alt="Alt text description">
@@ -7,15 +6,10 @@
 </p>  
 <br>
 
-=======
-#CERBERUS
-
-
-
-#  Real-Time Fraud Detection System
->>>>>>> Stashed changes
-
+<p align="center">
 A production-ready machine learning system for detecting credit card fraud in real-time with sub-100ms latency. Built with XGBoost, FastAPI, and Streamlit.
+</p> 
+<br>
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)
@@ -359,10 +353,11 @@ This is a portfolio project. For questions or collaboration:
 - XGBoost team for the powerful ML framework
 
 ---
-
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9035e119-4de0-4d9d-9b28-fd6daf2bbcbd" alt="CERBERUS" width="40">
-  <br>
-  <sub>Built by Michael Gurule | Data: Synnthetic</sub>
+<sub>BUILT BY</sub> 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ecb66c61-85c5-4d24-aaa3-99ddf2cd33cf" alt="MICHAEL GURULE">
+<p align="center">
+<b>Data Scientist | Machine Learning Engineer</b>
 </p>
 
